@@ -1,0 +1,103 @@
+
+.forget{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.fpic{
+
+    width: 30vw;
+    height: 80vh;
+}
+
+.forget-form{
+
+    margin-top: 7%;
+    max-width: 500px;
+}
+
+.forget-heading{
+
+    color: rgb(212,3,3);
+    margin-left: 10px;
+    font-size: 40px;
+}
+.tassalli{
+
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: -10px;
+    width: 80%;
+}
+
+.fmail{
+
+    color: rgb(75,75,75);
+    font-size: 18px;
+    border: 1px solid rgb(105,105,105);
+    padding: 10px;
+    width: 320px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 10%;
+    display: block;
+}
+.fmail:focus{
+
+  outline: none;
+  box-shadow: 0 0 5px #0056b3;
+  border: none; 
+}
+
+.request-button{
+
+    display: block;
+    margin-top: 20px;
+    margin-left: 10%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(212,3,3);
+    border-radius: 20px;
+    padding: 10px;
+    width: 340px;
+}
+.request-button:hover{
+
+    background-color: rgb(151, 1, 1);
+}
+
+.btl{
+    
+    display: block;
+    color: rgb(75,75,75);
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    margin-left: 33%;
+    margin-top: 5px;
+}
+.btl:hover{
+
+    color: rgb(48, 48, 48);
+    text-decoration: underline;
+}
+
+.fmail-error{
+
+  color: rgb(255, 0, 0);
+  margin-left: 11%;
+  font-size: 16px;
+}
+#wrong-input{
+ 
+    border: none;
+    box-shadow: 0 0 5px red;
+  }
+#right-input{
+  
+    visibility: visible;
+}

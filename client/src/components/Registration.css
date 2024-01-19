@@ -1,0 +1,191 @@
+.registration-intro {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 70vh;
+}
+.registration-intro::before {
+  content: "";
+  background-image: url(/public/PhotoReal_Generate_a_background_image_for_registration_of_a_ma_0.jpg);
+  filter: blur(3px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.registration-intro-text {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  padding: 1.5%;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: slideInLeft 2s ease-in-out;
+  clip-path: polygon(15% 0, 85% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%);
+  margin-left: 1%;
+  text-align: center;
+}
+.reg-text {
+  font-size: 1.3vw;
+  color: #333;
+  margin: 10px 0;
+  text-align: center;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.reg-title {
+  font-size: 2.5vw;
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.registration-section3 {
+  position: relative;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("/public/16.jpg");
+  background-size: cover;
+  padding: 2% 2%;
+  border: 1px solid #ddd;
+  border-radius: 2%;
+  margin: 5%;
+}
+.registration-section3:hover {
+  box-shadow: 0.2vw 0.2vw 1vw rgba(0, 123, 255, 0.2);
+  transition: box-shadow 0.3s;
+}
+.personal-details {
+  font-size: 2.5vw;
+  color: rgb(212, 3, 3);
+  text-align: center;
+  margin: 2% 0;
+  border-bottom: 1px solid rgb(212, 3, 3);
+  padding-bottom: 1%;
+}
+.personal-form {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+.personal-line {
+  display: flex;
+  flex-direction: row;
+  margin-left: 7%;
+  margin-bottom: 2.5%;
+}
+.personal-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.input-field,
+select.input-field {
+  background-color: #f0f0f0;
+  width: 80%;
+  padding: 3%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1vw;
+  transition: border-color 0.3s, background-color 0.3s, transform 0.3s;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+}
+.input-field:hover,
+select.input-field:hover {
+  border-color: #007bff;
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+  box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.2);
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  transform: scale(1);
+  outline: none;
+  box-shadow: 0 0 0.5vw rgba(0, 123, 255, 0.5);
+}
+.center-textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.textarea-field {
+  width: 90%;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1vw;
+  transition: border-color 0.3s, background-color 0.3s, transform 0.3s;
+  margin-right: 7%;
+}
+
+.textarea-field:hover {
+  border-color: #555;
+  transform: scale(1.05);
+}
+
+.textarea-field:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  transform: scale(1);
+  outline: none;
+  box-shadow: 0 0 0.5vw rgba(0, 123, 255, 0.5);
+}
+.registration-section5 {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+.registration-section5 button {
+  background-color: rgb(212, 3, 3);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.registration-section5 button:hover {
+  background: linear-gradient(to bottom, rgb(212, 3, 3), rgb(255, 51, 51));
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.regerror {
+  color: #d32f2f;
+  font-size: 1vw;
+  margin-top: 2.5%;
+  display: block;
+}
+label {
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: #333;
+}
+.input-field.invalid {
+  border-color: #cc0000;
+  background-color: #f0f0f0;
+  border: 2px solid #cc0000;
+}

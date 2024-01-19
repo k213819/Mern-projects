@@ -1,0 +1,121 @@
+.title{
+
+    color: rgb(212, 3, 3);
+    font-style: italic;
+    font-size: 35px;
+    margin-left: 10px;
+    margin-right: 130px;
+
+    animation-name: fadingin;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 1;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+@keyframes fadingin{
+    0%{
+        opacity: 0.0;
+        transform: translateY(-270%);
+       
+    }
+    100%{
+        opacity:1.0;
+        transform: translateY(0%);
+    }
+}
+
+.title-container{
+
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+    
+}
+.body{
+    
+    width:100%;
+    position: absolute;
+    top: 125px;
+    left: 0px;
+    background-color: transparent;
+    
+}
+
+.about{
+
+    color: rgb(212, 3, 3);
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 2px;
+    margin-top: 20px;
+    width: 120px;
+    animation-name: aboutme;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 1;
+animation-duration: 1s;
+
+ animation-fill-mode: forwards;
+ animation-direction: normal;
+ animation-delay: 1s;
+ opacity: 0.0;
+ height:50px ;
+
+ transition: background-color 0.5s,color 0.5s;
+}
+@keyframes aboutme{
+    0%{
+        opacity: 0.0;
+        transform: translateY(-270%);
+       
+    }
+    100%{
+        opacity:1.0;
+        transform: translateY(0%);
+    }
+}
+ 
+.about:hover{
+
+    text-decoration: underline;
+}
+.nav-2{
+
+    margin-left: 8%;
+}
+
+.nav-3{
+
+    margin-left: 16%;
+}
+
+.registration-button{
+
+    color: white;
+    font-size: 22px;
+    font-style: bold;
+    border: none;
+    background-color: rgb(212, 3, 3);
+    border-radius: 30px;
+    padding: 5px;
+    height: 50px;
+    width: 150px;
+    margin-top: 20px;
+    transition:color 0.5s , background-color 0.5s;
+
+}
+
+.registration-button:hover{
+
+    color: rgb(212, 3, 3);
+    border: 2px solid rgb(212, 3, 3);
+    background-color: white;
+}

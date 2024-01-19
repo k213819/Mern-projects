@@ -1,0 +1,339 @@
+
+.login-page{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.Login-container{
+
+    top: 12%;
+    width: 28vw;
+}
+
+.login-top{
+  
+   text-align: center;
+   font-weight: bold;
+   position: relative;
+   top: 0px;
+    font-size: 40px;
+    animation-name: fadingout1;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    opacity:0.0;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+@keyframes fadingout1
+{
+0%{
+    opacity:0.0;
+    transform:translateY(-120%);
+}
+100%{
+    opacity: 1;
+transform:translateY(20%);
+
+}
+
+}
+.LB{
+
+    top: 1%;
+    background-color: white;
+    border-radius: 30px;
+    width: 28vw;
+    border: 2px solid rgb(212,3,3);
+    margin-bottom: 50px;
+    animation-name: go3;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    opacity:0.0;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+   
+   }
+   @keyframes go3
+   {
+   0%{
+       opacity:0.0;
+       transform:translateY(110%);
+   }
+   100%{
+       opacity: 1;
+   transform:translateY(0%);
+   
+   }
+   
+   }
+   .Lh1{
+
+    padding: 0 175px 40px 140px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(212,3,3);
+    border-bottom: 2px solid white;
+    box-sizing: border-box;
+   }
+ .user{
+
+width: 95%;
+padding:5px;
+height: 40px;
+font-size: 20px;
+color: rgb(212,3,3);
+border: 1px solid rgb(212,3,3);
+border-radius: 30px;
+background: none;
+outline: none;
+   }
+   .pass{
+
+width: 95%;
+padding:5px;
+height: 40px;
+font-size: 20px;
+color: rgb(212,3,3);
+border: 1px solid rgb(212,3,3);
+border-radius: 30px;
+background: none;
+outline: none;
+   }
+
+   input:focus{
+
+    border: 2px solid rgb(212,3,3);
+   }
+   .lbl{
+
+    position: relative;
+    padding-bottom: 4px;
+    margin: 30px 0;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(212,3,3);
+   }
+   span{
+
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+
+}
+  .labels{
+
+position: absolute;
+top: 5px;
+left: 7px;
+font-size: 25px;
+color: rgb(212,3,3);
+pointer-events: none;
+transition: 0.5s;
+
+}
+    .member{
+
+        color: white;
+        font-size: 18px;
+        margin-left: 120px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .forgot{
+
+        text-decoration: none;
+        font-weight: 200;
+        color: rgb(212,3,3);
+        margin-left: 280px;
+        font-size: 15px;
+        
+    }
+    .forgot:hover{
+
+        text-decoration: underline;
+    }
+    .lgn{
+
+        color: white;
+        background-color: rgba(212, 3, 3, 0.8);
+        border: none;
+        border-radius: 40px;
+        font-size: 24px;
+        width: 95%;
+        font-weight: bold;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        transition:background-color 0.5s,font-size 0.5s;
+    }
+    .lgn:hover{
+       font-size: 30px;;
+        background-color: rgba(212, 3, 3, 1);
+
+    }
+    
+    .login-undertop{
+        position:relative;
+        left:40px;
+        display: inline-block;
+        margin-top: 0px;
+        margin-right: 5px;
+
+        animation-name: fadingout2;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        opacity:0.0;
+        animation-fill-mode: forwards;
+        animation-direction: normal;
+
+    }
+    @keyframes fadingout2
+    {
+    0%{
+        opacity:0.0;
+        transform:translateX(-10%);
+    }
+    100%{
+        opacity: 1;
+    transform:translateX(20%);
+    
+    }
+    
+    }
+
+    .Login-reg{
+        position:relative;
+        left:80px;
+        color: rgb(212, 3, 3);
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+        display: inline-block;
+
+        animation-name: fadingout3;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        opacity:0.0;
+        animation-fill-mode: forwards;
+        animation-direction: normal;
+
+    }
+
+    @keyframes fadingout3
+    {
+    0%{
+        opacity:0.0;
+        transform:translateY(110%);
+    }
+    100%{
+        opacity: 1;
+    transform:translateY(0%);
+    
+    }
+    
+    }
+    .Login-reg:hover{
+
+        text-decoration: underline;
+    }
+
+    .lpic1{
+        margin-top: 13%;
+        margin-left: 5%;
+        height: 500px;
+        animation-name: go1;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        opacity:0.0;
+        animation-fill-mode: forwards;
+        animation-direction: normal;
+    }
+
+
+    @keyframes go1
+    {
+    0%{
+        opacity:0.0;
+        transform:translateX(110%);
+    }
+    100%{
+        opacity: 1;
+    transform:translateX(0%);
+    
+    }
+    }
+    .lpic2{
+
+        margin-top: 13%;
+        margin-left: 0px;
+        height: 500px;      
+        animation-name: go2;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        opacity:0.0;
+        animation-fill-mode: forwards;
+        animation-direction: normal;
+        z-index: -1;
+    }
+    
+    @keyframes go2
+    {
+    0%{
+        opacity:0.0;
+        transform:translateX(-110%);
+    }
+    100%{
+        opacity: 1;
+    transform:translateX(0%);
+    
+    }
+    
+    }
+
+    .user{
+        transition:border-color 0.5s;
+    }
+    .user:hover{
+        border-color:rgb(0, 150, 150);
+    }
+    .user:focus{
+        border-color:rgb(0, 150, 150);
+    }
+    .pass{
+        transition:border-color 0.5s;
+    }
+    .pass:hover{
+        border-color:rgb(0, 150, 150); 
+    }
+    .pass:focus{
+        border-color:rgb(0, 150, 150);
+    }
+
+    .login-error{
+
+        color: rgb(255, 0, 0);
+        margin-left: 28px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }

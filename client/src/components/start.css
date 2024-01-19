@@ -1,0 +1,146 @@
+.start-container{
+
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/back.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+    transition: filter 0.3s ease;
+  }
+  
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    z-index: 0;
+    animation: fadeInOverlay 1s ease forwards;
+  }
+  
+  @keyframes fadeInOverlay {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .start-content{
+
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 50%;
+    text-align: center;
+  }
+
+  .start-discp-1{
+
+    color: white;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+  transition:box-shadow 0.5s , font-size 0.5s,color 0.5s;
+  margin-left: 7px;
+  animation-name: fadingout;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  opacity:0.0;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  position: relative;
+  top: 40px;
+}
+
+@keyframes fadingout
+{
+0%{
+    opacity:0.0;
+    transform:translateY(200%);
+}
+100%{
+    opacity: 1;
+transform:translateY(-100%);
+
+}
+
+}
+.start-discp-2{
+
+    color: white;
+    font-size: 50px;
+    animation-name: fadingout;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    opacity:0.0;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    position: relative;
+    top: 110px;
+}
+
+@keyframes slidein {
+  0% { margin-left:-800px; }
+  20% { margin-left:-800px; }
+  35% { margin-left:0px; }
+  100% { margin-left:0px; }
+}
+.single{
+
+     color: white;
+     background-color: rgb(212, 3, 3);
+     border: none;
+     border-radius: 30px;
+     font-weight: 300;
+     font-size: 25px;
+     padding: 10px;
+     margin-left: -45px;
+     animation-name: fadingout2;
+     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+     animation-iteration-count: 1;
+     animation-duration: 3s;
+     animation-delay: 2s;
+     opacity:0.0;
+     animation-fill-mode: forwards;
+     animation-direction: normal;
+     transition:color 0.5s , background-color 0.5s;
+}
+
+.single:hover{
+
+    color: rgb(212, 3, 3);
+    border: 2px solid rgb(212, 3, 3);
+    background-color: white;
+}
+
+@keyframes fadingout2
+{
+0%{
+    opacity:0.0;
+    transform:translateY(200%);
+}
+100%{
+    opacity: 1;
+transform:translateY(-100%);
+
+}
+}

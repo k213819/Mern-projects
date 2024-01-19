@@ -1,0 +1,154 @@
+.about-background{
+    background-image: url('../assets/fast1.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;   
+}
+.about-background::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    backdrop-filter: blur(20px);
+    z-index: -1;
+}
+.about-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    margin-bottom: 100px;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+.aboutuser-info{
+    background: rgba(45,58,89,0.8);
+    width: 350px;
+    border-radius: 10px;
+    color: #e0e0e0;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    z-index: 2;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(255,255,255, 0.5);
+    margin: 20px 0;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.aboutuser-info .country-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutuser-info .country-name{
+    font-size: 18px;
+    margin-right: 8px;
+    color: #ded4d6;
+}
+.aboutuser-info .country-flag{
+    width: 24px;
+    height: 24px;
+    fill: #ded4d6;
+}
+.aboutuser-info .contact-info{
+    display: flex;
+    align-items: center;
+}
+.aboutuser-info p i{
+    margin-right: 8px;
+    font-size: 18px;
+    color: #ded4d6;
+}
+.aboutuser-info p.email-info,.aboutuser-info p.linkedin-info {
+    margin-top: 6px;
+}
+.aboutuser-info:hover {
+    background-color: rgba(45, 58, 89, 0.9);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+.aboutuser-image{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutuser-image img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+.aboutuser-image img:hover {
+    transform: scale(1.05);
+}
+.about-title {
+    padding: 20px;
+}
+.about-title h2{
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+    animation: fadeInUp 1s ease-in-out;
+}
+@keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+.aboutuser-info p{
+    font-size: 16px;
+    line-height: 22px;
+    margin: 8px 0;
+    color: #ded4d6;
+    transition: color 0.3s;
+}
+.aboutuser-info p:hover {
+    color: #fff;
+}
+.aboutuser-info h2{
+    font-size: 20px;
+    line-height: 24px;
+    margin: 10px 0;
+    color: #ded4d6;
+    text-align: center;
+}
+.aboutuser-info h2:hover {
+    color: #fff;
+    font-size: 22px;
+}
+.aboutuser-info h3{
+    margin: 10px 0 5px;
+    font-size: 28px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    background-color: #2d3a59;
+    color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
